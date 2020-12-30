@@ -93,7 +93,10 @@ async def handler(event):
 
     print(chat.username)
 
-    dw = await event.get_reply_message()
+    #dw = await event.get_reply_message()
+    shutil.rmtree("./Download/"+chat.username)
+
+    await client.send_message(chat,"Thumbnail Added")
 
     #links =event.text.split(" ")[1]
 
@@ -127,7 +130,7 @@ async def handler(event):
 
     shutil.rmtree("./Download/"+chat.username)
 
-    await client.send_message(chat,"thumbnail deleted")
+    await client.send_message(chat,"Thumbnail deleted")
 @client.on(events.NewMessage(pattern='(?i)/rename'))
 async def handler(event):
     chat = await event.get_chat()
