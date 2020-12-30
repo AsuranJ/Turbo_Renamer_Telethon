@@ -1,7 +1,7 @@
 # RenamerBot-telethon😆😆😆😆
 heroku deploy create your own from fork and deploy connect your github
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/AsuranJ/Turbo-Renamer-Private/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/AsuranJ/Turbo_Renamer_Telethon/blob/main/)
 
 <p>
 """""""""""""""""""""""''''''''''''''''''''
