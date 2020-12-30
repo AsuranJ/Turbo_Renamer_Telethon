@@ -114,7 +114,7 @@ async def handler(event):
 
                 print("hh")
 
-@client.on(events.NewMessage(pattern='(?i)/del_thumbnail'))
+@client.on(events.NewMessage(pattern='(?i)/deletethumbnail'))
 
 async def handler(event):
 
@@ -130,7 +130,7 @@ async def handler(event):
 
     shutil.rmtree("./Download/"+chat.username)
 
-    await client.send_message(chat,"Thumbnail deleted")
+    await client.send_message(chat,"Thumbnail Deleted 😔")
 @client.on(events.NewMessage(pattern='(?i)/rename'))
 async def handler(event):
     chat = await event.get_chat()
