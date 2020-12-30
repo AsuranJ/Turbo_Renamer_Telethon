@@ -36,6 +36,25 @@ logging.basicConfig(level=logging.WARNING)
 
 client = TelegramClient('anfghohn', int(os.environ.get("a" )), os.environ.get("b")).start(bot_token= os.environ.get("c"))
 #client = TelegramClient('anfghvygggghbohn',os.getenv("a"),os.getenv("b")).start(bot_token=os.getenv("c"))
+
+@client.on(events.NewMessage(pattern='/start'))
+async def handler(event):
+    chat = await event.get_chat()
+    await client.send_message(chat,"""Hai...!
+    
+This is a Turbo Renamer Telethon Bot!
+
+Command list
+
+/thumbnail -thumbnail set
+
+/rename - rename file
+
+/rename - rename file.mp4 for videos
+
+/del_thumbnail -delete thumbnail
+
+""")
    
    
    
