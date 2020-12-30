@@ -93,10 +93,10 @@ async def handler(event):
 
     print(chat.username)
 
-    #dw = await event.get_reply_message()
-    shutil.rmtree("./Download/"+chat.username)
+    dw = await event.get_reply_message()
+    #shutil.rmtree("./Download/"+chat.username)
 
-    await client.send_message(chat,"Thumbnail Added 😀 Successfully")
+    #await client.send_message(chat,"Thumbnail Added 😀 Successfully")
 
     #links =event.text.split(" ")[1]
 
