@@ -52,7 +52,7 @@ Command list
 
 /rename - rename file.mp4 for videos
 
-/del_thumbnail -delete thumbnail
+/deletethumbnail -delete thumbnail
 
 """)
    
@@ -96,7 +96,7 @@ async def handler(event):
     #dw = await event.get_reply_message()
     shutil.rmtree("./Download/"+chat.username)
 
-    await client.send_message(chat,"Thumbnail Added")
+    await client.send_message(chat,"Thumbnail Added 😀 Successfully")
 
     #links =event.text.split(" ")[1]
 
